@@ -1,0 +1,80 @@
+/* App.css */
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, rgba(173, 216, 230, 0.2), rgba(70, 130, 180, 0.2)); /* Light blue to dark blue with 20% opacity */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  width: 220px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+}
+
+.input-field::placeholder {
+  color: #888;
+}
+
+.add-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0072ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #005bb5;
+}
+
+.item-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+.item {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.8); /* Default background (white) */
+}
+
+.item:nth-child(even) {
+  background-color: rgba(211, 211, 211, 0.8); /* Grey background for even items */
+}
+
+.item:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.8); /* White background for odd items */
+}
